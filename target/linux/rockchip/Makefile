@@ -1,5 +1,7 @@
-# SPDX-License-Identifier: GPL-2.0-only
-
+#
+# This is free software, licensed under the GNU General Public License v2.
+# See /LICENSE for more information.
+#
 include $(TOPDIR)/rules.mk
 
 BOARD:=rockchip
@@ -16,7 +18,8 @@ endef
 include $(INCLUDE_DIR)/target.mk
 
 DEFAULT_PACKAGES += uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug \
-					autocore-arm
+		    autocore-arm automount fdisk e2fsprogs ethtool haveged htop lm-sensors \
+		    luci-app-zerotier
 
 KERNELNAME:=Image dtbs
 
